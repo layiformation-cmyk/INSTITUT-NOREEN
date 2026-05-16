@@ -22,13 +22,21 @@ export default function About() {
             <div className="relative z-10 card-dark p-4 rounded-xl border-gold/40">
               <div className="bg-navy-light aspect-[4/5] flex items-center justify-center rounded-lg overflow-hidden">
                  {/* This would be the founder's photo. Using a placeholder profile look */}
-                 <div className="text-white/10 flex flex-col items-center">
-                   <div className="w-32 h-32 rounded-full border border-gold/20 flex items-center justify-center mb-4">
-                     <GraduationCap size={64} className="text-gold" />
-                   </div>
-                   <p className="font-serif italic text-2xl text-white">Idriss Sow</p>
-                   <div className="badge-gold mt-4 py-0.5 scale-75 opacity-60">Fondateur</div>
+               <div className="text-white/10 flex flex-col items-center w-full h-full relative">
+                 <div className="w-full h-full overflow-hidden">
+                   <img 
+                     src="https://image.noelshack.com/fichiers/2026/20/6/1778965314-chatgpt-image-16-mai-2026-23-01-45.jpg" 
+                     alt="Idriss Sow" 
+                     className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                     referrerPolicy="no-referrer"
+                   />
+                   <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-navy to-transparent" />
                  </div>
+                 <div className="absolute bottom-6 flex flex-col items-center">
+                   <p className="font-serif italic text-2xl text-white">Idriss Sow</p>
+                   <div className="badge-gold mt-2 py-0.5 scale-75 opacity-80">Fondateur</div>
+                 </div>
+               </div>
               </div>
             </div>
             {/* Decoration */}
