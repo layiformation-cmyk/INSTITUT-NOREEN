@@ -33,7 +33,7 @@ export default function App() {
         <Hero />
         
         {/* Quote / Mission Section */}
-        <section className="py-20 relative overflow-hidden">
+        <section className="pt-16 pb-8 relative overflow-hidden">
           <div className="absolute inset-0 opacity-10 arabic-pattern" />
           <div className="max-w-4xl mx-auto px-4 text-center relative z-10">
             <motion.div
@@ -41,8 +41,13 @@ export default function App() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
             >
-              <div className="text-gold/40 mb-8 flex justify-center">
-                <span className="text-8xl font-serif">“</span>
+              <div className="mb-8 flex justify-center">
+                <img 
+                  src="https://image.noelshack.com/fichiers/2026/20/6/1778962164-chatgpt-image-16-mai-2026-21-41-08.jpg" 
+                  alt="Institut Noreen Logo" 
+                  className="w-20 h-20 object-cover rounded-full border border-gold/20"
+                  referrerPolicy="no-referrer"
+                />
               </div>
               <h2 className="text-white font-serif text-3xl md:text-5xl italic leading-tight mb-8">
                 Transmettre la lumière du Coran avec <span className="text-gold">douceur</span> et excellence pour chaque élève.

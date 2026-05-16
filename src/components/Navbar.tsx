@@ -17,8 +17,15 @@ export default function Navbar() {
     <nav className="fixed top-0 left-0 right-0 z-50 glass-morphism">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-20 items-center">
-          <div className="flex-shrink-0 flex items-center gap-1">
-            <div className="w-10 h-10 border border-gold/40 rounded flex items-center justify-center text-gold font-serif text-xl border-dashed">N</div>
+          <div className="flex-shrink-0 flex items-center gap-3">
+            <div className="w-12 h-12 overflow-hidden rounded-lg">
+              <img 
+                src="https://image.noelshack.com/fichiers/2026/20/6/1778962164-chatgpt-image-16-mai-2026-21-41-08.jpg" 
+                alt="Institut Noreen Logo" 
+                className="w-full h-full object-cover" 
+                referrerPolicy="no-referrer"
+              />
+            </div>
             <span className="font-serif text-2xl font-normal tracking-tight text-white flex flex-col">
               <span>Institut <span className="text-gold">Noreen</span></span>
               <span className="text-[10px] font-sans text-gold/60 uppercase tracking-[2px]">Nourun ‘Ala Nour</span>

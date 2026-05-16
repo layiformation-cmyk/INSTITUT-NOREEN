@@ -36,7 +36,7 @@ export default function RegistrationForm() {
   };
 
   return (
-    <section id="register" className="py-24 relative overflow-hidden">
+    <section id="register" className="pt-8 pb-24 relative overflow-hidden">
       <div className="absolute inset-0 arabic-pattern opacity-[0.05] pointer-events-none" />
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
@@ -220,42 +220,51 @@ export function Footer() {
   return (
     <footer className="py-20 relative overflow-hidden border-t border-gold/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid md:grid-cols-4 gap-16 mb-20 text-center md:text-left">
-          <div className="col-span-2">
-            <div className="flex items-center justify-center md:justify-start gap-2 mb-6">
-              <div className="w-10 h-10 border border-gold/40 rounded flex items-center justify-center text-gold font-serif text-xl border-dashed">N</div>
-              <span className="font-serif text-3xl font-normal tracking-tight text-white flex flex-col">
-                <span>Institut <span className="text-gold">Noreen</span></span>
-                <span className="text-[10px] font-sans text-white/30 uppercase tracking-[2px]">Nourun ‘Ala Nour</span>
-              </span>
+        <div className="flex flex-col items-center mb-16 text-center">
+          <div className="mb-12">
+            <div className="flex flex-col items-center justify-center gap-4 mb-8">
+              <div className="w-14 h-14 overflow-hidden rounded-xl shadow-2xl border border-gold/20">
+                <img 
+                  src="https://image.noelshack.com/fichiers/2026/20/6/1778962164-chatgpt-image-16-mai-2026-21-41-08.jpg" 
+                  alt="Institut Noreen Logo" 
+                  className="w-full h-full object-cover" 
+                  referrerPolicy="no-referrer"
+                />
+              </div>
+              <div className="flex flex-col items-center">
+                <span className="font-serif text-4xl text-white tracking-tight">Institut <span className="text-gold">Noreen</span></span>
+                <span className="text-[10px] font-sans text-white/30 uppercase tracking-[4px]">Nourun ‘Ala Nour</span>
+              </div>
             </div>
-            <p className="text-white/40 text-sm max-w-sm font-light italic leading-relaxed mx-auto md:mx-0">
+            <p className="text-white/40 text-base font-light italic leading-relaxed max-w-xl mx-auto">
               Une école d’apprentissage du Coran et de la langue arabe à distance, alliant modernité, douceur et excellence pédagogique.
             </p>
           </div>
           
-          <div>
-            <h4 className="text-[10px] font-bold text-gold uppercase tracking-[4px] mb-8">Navigation</h4>
-            <ul className="space-y-4 text-white/50 text-xs font-light tracking-widest uppercase">
-              <li><a href="#home" className="hover:text-gold transition-colors">Accueil</a></li>
-              <li><a href="#about" className="hover:text-gold transition-colors">À propos</a></li>
-              <li><a href="#programs" className="hover:text-gold transition-colors">Programmes</a></li>
-              <li><a href="#modules" className="hover:text-gold transition-colors">Modules</a></li>
-            </ul>
-          </div>
-
-          <div>
-             <h4 className="text-[10px] font-bold text-gold uppercase tracking-[4px] mb-8">Contact</h4>
-             <ul className="space-y-6 text-white/60 text-sm italic">
-               <li className="flex items-center justify-center md:justify-start gap-3">
-                 <Phone size={14} className="text-gold opacity-50" />
-                 +33 (0)6 60 54 85 92
-               </li>
-               <li className="flex items-center justify-center md:justify-start gap-3">
-                 <Mail size={14} className="text-gold opacity-50" />
-                 institutnoreen@gmail.com
-               </li>
-             </ul>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-32 w-full">
+            <div className="flex flex-col items-center">
+              <h4 className="text-[10px] font-bold text-gold uppercase tracking-[4px] mb-8">Navigation</h4>
+              <ul className="flex flex-wrap justify-center gap-x-8 gap-y-4 text-white/50 text-xs font-light tracking-widest uppercase">
+                <li><a href="#home" className="hover:text-gold transition-colors">Accueil</a></li>
+                <li><a href="#about" className="hover:text-gold transition-colors">À propos</a></li>
+                <li><a href="#programs" className="hover:text-gold transition-colors">Programmes</a></li>
+                <li><a href="#modules" className="hover:text-gold transition-colors">Modules</a></li>
+              </ul>
+            </div>
+            
+            <div className="flex flex-col items-center">
+               <h4 className="text-[10px] font-bold text-gold uppercase tracking-[4px] mb-8">Contact</h4>
+               <ul className="space-y-6 text-white/60 text-sm italic">
+                 <li className="flex items-center justify-center gap-4">
+                   <Phone size={14} className="text-gold opacity-50" />
+                   +33 (0)6 60 54 85 92
+                 </li>
+                 <li className="flex items-center justify-center gap-4">
+                   <Mail size={14} className="text-gold opacity-50" />
+                   institutnoreen@gmail.com
+                 </li>
+               </ul>
+            </div>
           </div>
         </div>
 

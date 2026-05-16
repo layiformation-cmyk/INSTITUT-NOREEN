@@ -34,7 +34,7 @@ export default function Modules() {
   ];
 
   return (
-    <section id="modules" className="py-24 relative overflow-hidden">
+    <section id="modules" className="pt-4 pb-8 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <motion.div

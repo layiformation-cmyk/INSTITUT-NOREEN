@@ -2,22 +2,70 @@ import { motion } from "motion/react";
 import { ChevronRight, Book } from "lucide-react";
 
 export default function Hero() {
+  const carouselImages = [
+    "https://image.noelshack.com/fichiers/2026/20/6/1778962828-chatgpt-image-16-mai-2026-22-20-00.jpg",
+    "https://image.noelshack.com/fichiers/2026/20/6/1778962830-chatgpt-image-16-mai-2026-22-17-39.jpg",
+    "https://image.noelshack.com/fichiers/2026/20/6/1778962828-chatgpt-image-16-mai-2026-22-16-16.jpg",
+    "https://image.noelshack.com/fichiers/2026/20/6/1778962940-chatgpt-image-16-mai-2026-22-18-35.jpg"
+  ];
+
   return (
-    <section id="home" className="relative min-h-[90vh] flex items-center pt-20 overflow-hidden">
+    <section id="home" className="relative min-h-[90vh] pt-24 overflow-hidden">
       {/* Background patterns */}
       <div className="absolute inset-0 opacity-10 arabic-pattern" />
       <div className="absolute top-0 right-0 w-1/3 h-1/3 bg-gold opacity-10 rounded-full blur-3xl -mr-20 -mt-20" />
       <div className="absolute bottom-0 left-0 w-1/2 h-1/2 bg-gold opacity-5 rounded-full blur-3xl -ml-40 -mb-40" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full py-12">
+      {/* Infinite Carousel at the Top */}
+      <div className="relative z-20 mt-4 overflow-hidden">
+        <div className="absolute inset-y-0 left-0 w-24 md:w-32 bg-gradient-to-r from-navy via-navy/50 to-transparent z-10" />
+        <div className="absolute inset-y-0 right-0 w-24 md:w-32 bg-gradient-to-l from-navy via-navy/50 to-transparent z-10" />
+        
+        <motion.div 
+          className="flex gap-4 md:gap-6 w-fit h-56 md:h-72 items-center"
+          animate={{ x: ["0%", "-50%"] }}
+          transition={{ 
+            duration: 40, 
+            ease: "linear", 
+            repeat: Infinity 
+          }}
+        >
+          {[...carouselImages, ...carouselImages].map((img, i) => (
+            <div key={i} className="h-44 md:h-64 aspect-video shrink-0 rounded-lg md:rounded-xl overflow-hidden border border-gold/20 shadow-2xl transition-transform hover:scale-105 duration-500 bg-navy-light">
+              <img src={img} alt="" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+            </div>
+          ))}
+        </motion.div>
+      </div>
+
+      {/* Elegant Welcome Message */}
+      <div className="relative z-20 pt-8 pb-4 flex flex-col items-center text-center">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          className="max-w-4xl mx-auto px-4"
+        >
+          <div className="w-24 h-px bg-gold/50 mx-auto mb-4" />
+          <h2 className="font-serif text-5xl md:text-8xl text-white mb-4 tracking-tight leading-tight">
+            Bienvenue à l'<span className="text-gold italic">institut</span>
+          </h2>
+          <div className="flex items-center justify-center gap-4 mb-4">
+            <div className="w-12 h-px bg-gold/30" />
+            <span className="text-gold/60 text-xs uppercase tracking-[0.3em] font-sans">Noreen</span>
+            <div className="w-12 h-px bg-gold/30" />
+          </div>
+          <div className="w-24 h-px bg-gold/50 mx-auto mt-4" />
+        </motion.div>
+      </div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full py-4">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <div className="badge-gold mb-6">Bienvenue à l'institut</div>
-            
             <h1 className="font-serif text-5xl md:text-7xl text-white font-normal leading-[1.1] mb-8">
               Transmettre la lumière du Coran avec <span className="text-gold italic">douceur</span>.
             </h1>
