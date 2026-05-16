@@ -1,0 +1,8 @@
+{
+  "name": "Institut Noreen - Nourun ‘Ala Nour",
+  "description": "École d’apprentissage du Coran et de la langue arabe à distance, alliant modernité, douceur et excellence pédagogique.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
