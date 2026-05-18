@@ -272,10 +272,7 @@ export function Footer() {
           <p className="text-[10px] uppercase tracking-widest font-bold">
             © {new Date().getFullYear()} Noreen - Nourun ‘Ala Nour
           </p>
-          <div className="flex gap-8 text-[10px] uppercase tracking-widest font-bold">
-            <a href="#" className="hover:text-white">Légal</a>
-            <a href="#" className="hover:text-white">Confidentialité</a>
-          </div>
+
         </div>
       </div>
     </footer>

@@ -118,7 +118,7 @@ export default function Modules() {
              <div>
                <h4 className="font-serif text-3xl font-normal text-white mb-4">Planification des horaires</h4>
                <p className="text-white/60 text-lg font-light leading-relaxed max-w-3xl italic">
-                 "Les horaires sont fixés directement avec l'enseignant selon vos disponibilités."
+                 "Les horaires sont fixés directement avec l'enseignant selon vos disponibilités. Les cours se déroulent via Zoom ou Google Meet."
                </p>
                <p className="text-gold/40 text-xs uppercase tracking-[4px] mt-4 font-bold">Flexibilité totale</p>
              </div>

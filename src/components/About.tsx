@@ -59,10 +59,10 @@ export default function About() {
                   Je suis <span className="font-bold text-gold">Idriss Sow</span>, fondateur de l’Institut Noreen – Nourun ‘Ala Nour.
                 </p>
                 <p>
-                  J’ai acquis une formation solide en langue arabe et en Qur’an à l’IESH de Château-Chinon. Mon parcours m'a permis d'obtenir des ijazahs renommées en <span className="text-gold italic font-medium underline decoration-gold/30 underline-offset-4">Nourania</span> et en <span className="text-gold italic font-medium underline decoration-gold/30 underline-offset-4">Al-Jazariya</span>.
+                  Avec plus de 5 ans d’expérience dans l’enseignement, j’ai acquis une formation solide en langue arabe et en Qur’an à l’IESH de Château-Chinon. Mon parcours m’a permis d’obtenir des ijazahs renommées en <span className="text-gold italic font-medium underline decoration-gold/30 underline-offset-4">Nourania</span> et en <span className="text-gold italic font-medium underline decoration-gold/30 underline-offset-4">Al-Jazariya</span>.
                 </p>
                 <p>
-                  Inspiré par la belle récitation de <span className="font-medium text-white italic underline decoration-gold/20">Cheikh Noreen Mohamed Siddiq</span> (qu’Allah lui fasse miséricorde), notre institut met l’accent sur une pédagogie douce et adaptée à chaque cœur.
+                  Inspiré par la belle récitation de <span className="font-medium text-white italic underline decoration-gold/20">Cheikh Noreen Mohamed Siddiq</span> (qu’Allah lui fasse miséricorde), notre institut met l’accent sur une pédagogie douce, bienveillante et adaptée à chaque cœur.
                 </p>
               </div>
 

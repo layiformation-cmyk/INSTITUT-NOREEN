@@ -77,6 +77,7 @@ export default function Programs() {
                 <span className="flex items-center gap-2 italic">Cours individuels</span>
                 <span className="flex items-center gap-2 italic">Tous niveaux</span>
               </div>
+              <p className="text-gold/60 text-[10px] uppercase tracking-widest mt-4 font-bold">Cours via Zoom ou Google Meet</p>
             </div>
           </div>
           <a
